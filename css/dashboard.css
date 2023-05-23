@@ -81,7 +81,8 @@ h3 {
 .card {
     height: 350px;
     /* background-color: white; */
-    background-color: rgb(199,206,218);
+    /* background-color: rgb(199,206,218); */
+    background-color: rgb(227, 231, 238);
     border-radius: 20px;
 }
 .card:hover {
