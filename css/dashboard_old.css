@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    width: 435px;
+    height: calc(100vh - 15px);
+    /* height: 1500px; */
+    /* background-color: #dbeff9; */
+    background-color: rgb(44,70,116);
+    border-radius: 40px;
+}
+
+.container > .header {
+    width: 100%;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container > .header > h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2c4674;
+    text-align:  center;
+}
+
+.container > .header > .volver:hover {
+    transform: translateX(-10px);
+    transition: 1s all ease;
+}
+
+
+.container > .search {
+    padding: 1% 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container > .search > .content {
+    /* background-color: #f1f9fd; */
+    background-color: rgb(88,192,132);
+    padding-bottom: 7px;
+    height: 50px;
+    border-radius: 20px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.container > .search > .content > input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.container > .slides {
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container > .slides > .slide {
+    display: flex;
+    gap: 10px;
+    width: 45%;
+    font-size: 18px;
+    align-items: center;
+    background-color: #f1f9fd;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s all ease;
+}
+
+.container > .slides > .slide:hover {
+    transform: scale(1.1);
+}
+
+.container > .slides > .slide > img {
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.container > .slides > .active {
+    background: #6aa5e3;
+}
+
+.container > .slides > .active > img {
+    background-color: #f1f9fd;
+}
+
+.container > .content {
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px 25px;
+    width: 40%;
+    background-color: blue;
+}
+
+.container > .content {
+    display: none;
+}
+
+.container > .content:target  {
+    display: grid;
+}
+
+.container > .content > .card {
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    width: 180px;
+}
+
+.container > .content > .card > .content-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 0 0;
+    z-index: 20;
+    position: relative;
+}
+
+.container > .content > .card.perros > .content-image > img {
+    position: relative;
+    /* top: 10px; */
+    z-index: 10;
+    transition: .5s all ease;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.container > .content > .card.gatos > .content-image > img {
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    transition: .5s all ease;
+}
+
+
+.container > .content > .card > .content-image:hover > img {
+    top: 0;
+}
+
+.container > .content > .card > .content-card {
+    /* background-color: #ffffff; */
+    border-radius: 0 0 30px 30px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.container > .content > .card > .content-card > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.container > .content > .card > .content-card > p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #96a2b9;
+    margin-bottom: 10px;
+}
+
+.container > .content > .card > .content-card > .interaction {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > .content > .card > .content-card > .interaction > span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c4674;
+}
+
+
+/* .container > .content > .card1 > .content-image {
+    background-color: #e3c069;
+}
+
+.container > .content > .card2 > .content-image {
+    background-color: #d1723f;
+}
+
+.container > .content > .card3 > .content-image {
+    background-color: #488db3;
+}
+
+.container > .content > .card4 > .content-image {
+    background-color: #58c084;
+}
+ */
+.alex, .karsten {
+    cursor: pointer;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Monserrat, sans-serif;
+    font-size: 1.65em;
+    cursor: pointer;
+}
+.text-add {
+    color: white;
+    font-family: Monserrat, sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+}
