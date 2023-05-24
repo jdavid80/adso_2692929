@@ -11,9 +11,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-html , body {
-    
-}
  .container-main {
     width: 440px;
     height: 860px;
@@ -23,14 +20,16 @@ html , body {
     justify-content: center;;
 }
 .container-box {
-    background-image: url(../images/estatua_440X860.jpg), linear-gradient(red, blue);
+    background-image: url(../images/estatua_440X860.jpg);
     width: 100%;
+    height: 860px;
     z-index: 10;
 }
 .container-img {
     width: 100%;
-    background-color: rgb(96,96,96, .5);
-    height: 100vh;
+    height: 860px;
+    /* background-color: rgb(96,96,96, .5); */
+    background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0), rgba(243, 8, 8, 0.974));
     display: flex;
     justify-content: end;
     align-items: center;
@@ -82,6 +81,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 860px;
 }
 input[type="text"], input[type="submit"] {
     width: 92%;
