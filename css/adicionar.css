@@ -92,6 +92,15 @@ input[type="submit"]:hover {
     background-color: #34995e;
     width: 94%;
 }
+input[type="file"].btn-open-file {
+    height: 100px;
+    border-radius: 15px;
+    background-color: red;
+}
+.btn-open-file {
+    border-radius: 8px;
+    background-color: red;
+}
 /* image-content {} */
 /* fonts */
 @font-face {

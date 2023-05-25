@@ -186,7 +186,7 @@ h3 {
     align-items: center;
 }
 .icons-box {
-    margin-top: 10px;
+    margin: 10px 20px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
