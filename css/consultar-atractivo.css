@@ -33,7 +33,7 @@ h1 {
     font-size: 1em;
     color: white;
     font-family: "Montserrat-Regular";
-    margin-top: 45px;
+    margin-top: 15px;
     margin-bottom: 25px;
     text-align: center;
     font-weight: 600;
@@ -43,6 +43,13 @@ h3 {
     color: #2c4674;
     font-size: 14px;
     text-align: center;
+}
+.header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 .search {
     padding: 1% 5% 2% 5%;
